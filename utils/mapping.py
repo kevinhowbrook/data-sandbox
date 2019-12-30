@@ -10,8 +10,8 @@ mapping = {
 
 
 def county_to_ssr(county):
+    region = False
     for ssr, c in mapping.items():
         if county in c:
-            return ssr
-        else:
-            return False
+            region = ssr
+    return region
